@@ -1,0 +1,17 @@
+<li class="clearfix" (click)="setActive(chat)"
+    [ngClass]="activeUserChat == chat ? 'active' : ''">
+    <img [src]="chat.userImage" alt="avatar">
+    <div class="about">
+        <div class="name user-name">
+            {{chat.name}}
+        </div>
+        <div class="status">
+            <p *ngIf="chat.lastMessage" class="m-0">
+                {{chat.lastMessage.message}}
+            </p>
+            <i class="fa fa-circle"
+                [ngClass]="chat.isOnline ? 'online' : 'offline'"></i>
+            {{chat.lastSeen | formatDate}}
+        </div>
+    </div>
+</li>

@@ -1,0 +1,14 @@
+@if(activeUserChat !=null){
+<div class="chat-message clearfix">
+    <div class="input-group mb-0">
+        <div class="input-group-prepend" type="button" (click)="sendMessage()"
+            id="btnSendMessage">
+            <span class="input-group-text">
+                <i class="fa-brands fa-telegram"></i>
+            </span>
+        </div>
+        <input type="text" class="form-control" [(ngModel)]="message"
+            placeholder="Enter text here..." (keydown.enter)="sendMessage()">
+    </div>
+</div>
+}

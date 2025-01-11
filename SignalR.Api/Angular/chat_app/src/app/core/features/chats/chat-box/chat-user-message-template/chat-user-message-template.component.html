@@ -1,0 +1,23 @@
+@if(message.isFromMe){
+<li class="clearfix">
+    <div class="message-data">
+        <span class="message-data-time">{{message.createdDate |
+            formatDate}}</span>
+    </div>
+    <div class="message my-message" [textContent]="message.message"></div>
+</li>
+}
+@else {
+<li class="clearfix text-right mt-2">
+    <div class="message-data text-right float-right">
+        <span class="message-data-time">{{message.createdDate |
+            formatDate}}</span>
+        <img [src]="activeUserChat?.userImage"
+            alt="avatar">
+    </div>
+    <div class="clearfix"></div>
+    <div class="message other-message float-right"
+        [textContent]="message.message"></div>
+    <div class="clearfix"></div>
+</li>
+}

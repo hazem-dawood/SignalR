@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-lg-12">
+            <div class="card chat-app">
+                <div id="plist" class="people-list">
+                    <p class="connected-p"> <i
+                            class="fa fa-circle"
+                            [ngClass]="IsSignalrConnected ? 'online' : 'offline'">
+                            {{IsSignalrConnected ? 'connected' :
+                            'disconnected'}}
+                        </i></p>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i
+                                    class="fa fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control"
+                            placeholder="Search..." id="txtSearch">
+                    </div>
+                    <ul class="list-unstyled chat-list mt-2 mb-0">
+                        <app-chat-users
+                            (setActiveToParent)="setActiveChat($event)"></app-chat-users>
+                    </ul>
+                </div>
+                <div class="chat">
+                    <app-chat-box
+                        [activeUserChat]="activeUserChat"
+                        [chatMessages]="chatMessages"></app-chat-box>
+                    <app-chat-box-send-message (onMessageAdded)="onUserSendNewMessage($event)"
+                        [activeUserChat]="activeUserChat"></app-chat-box-send-message>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

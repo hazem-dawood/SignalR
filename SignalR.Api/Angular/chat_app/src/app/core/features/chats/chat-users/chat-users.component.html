@@ -1,0 +1,13 @@
+
+@for (item of allChats; track $index) {
+@if(item.isGroup){
+<app-chat-group [chat]="item" (setActiveToParent)=" setActive($event)"
+    [activeUserChat]="activeUserChat">
+</app-chat-group>
+}
+@else {
+<app-chat-user [chat]="item" (setActiveToParent)=" setActive($event)"
+    [activeUserChat]="activeUserChat">
+</app-chat-user>
+}
+}

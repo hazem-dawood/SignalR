@@ -1,0 +1,23 @@
+
+<form class="col-lg-12 form-login" [formGroup]="formGroup" (ngSubmit)="logIn()">
+    <div class="row justify-content-center">
+        <div class="form-group col-md-12">
+            <label>User Name</label>
+            <select class="form-control" title="Users"
+                formControlName="userName"
+                *ngIf="usersObservable | async as data;">
+                <option *ngFor="let item of data" [value]="item.userName"
+                    [text]="item.name"></option>
+            </select>
+        </div>
+        <div class="form-group col-md-12">
+            <label>Password</label>
+            <input class="form-control" type="text" value="123456"
+                formControlName="password"
+                title="Password" />
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-primary" type="submit">Sign In</button>
+        </div>
+    </div>
+</form>
