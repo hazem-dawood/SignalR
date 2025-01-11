@@ -7,7 +7,7 @@
         </div>
         <div class="status">
             <p *ngIf="chat.lastMessage" class="m-0">
-                {{chat.lastMessage.message}}
+                {{chat.lastMessage.message |subString10Char}}
             </p>
             <i class="fa fa-circle"
                 [ngClass]="chat.isOnline ? 'online' : 'offline'"></i>

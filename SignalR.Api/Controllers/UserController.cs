@@ -4,10 +4,12 @@ public class UserController(IApplicationUserService applicationUserService,
     IJwtService jwtService, ICurrentUserService currentUserService) : ControllerBase
 {
     [HttpGet]
-    public async Task<IActionResult> GetUserGroups(int userId) => Ok(await applicationUserService.GetUserGroups(userId));
+    public async Task<IActionResult> GetUserGroups(int userId)
+        => Ok(await applicationUserService.GetUserGroups(userId));
 
     [HttpGet, AllowAnonymous]
-    public async Task<IActionResult> GetUsers() => Ok(await applicationUserService.GetUsers());
+    public async Task<IActionResult> GetUsers() 
+        => Ok(await applicationUserService.GetUsers());
 
     [HttpPost, AllowAnonymous]
     public async Task<IActionResult> SignIn(LogInDto model)

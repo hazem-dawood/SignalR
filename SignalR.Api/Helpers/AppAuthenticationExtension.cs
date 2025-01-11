@@ -30,11 +30,14 @@ public static class AppAuthenticationExtension
                     OnMessageReceived = context =>
                     {
                         //authenticate hub so in CustomUserIdProvider can be IsAuthenticated = true
+                        if (!context.Request.Path.Value?.Contains(ChatHub.Path,
+                                StringComparison.CurrentCultureIgnoreCase) == true)
+                            return Task.CompletedTask;
+
                         var accessToken = context.Request.Query["access_token"];
+
                         if (!string.IsNullOrEmpty(accessToken))
-                        {
                             context.Token = accessToken;
-                        }
 
                         return Task.CompletedTask;
                     }

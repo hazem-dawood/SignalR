@@ -7,6 +7,7 @@ global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.IdentityModel.Tokens;
 global using SignalR.Api.Helpers;
 global using SignalR.Application.Helpers;
+global using SignalR.Application.Hubs;
 global using SignalR.Application.Interfaces.Auth;
 global using SignalR.Application.Interfaces.Chats;
 global using SignalR.Application.Models;

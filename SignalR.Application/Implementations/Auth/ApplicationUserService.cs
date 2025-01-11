@@ -2,6 +2,7 @@
 
 public class ApplicationUserService(ILogger<ApplicationUserService> logger,
     IApplicationDbContext applicationDbContext,
+    //why Lazy ? because I inject IApplicationUserService in ICurrentUserService
     Lazy<ICurrentUserService> currentUserService,
     CancellationToken cancellationToken) : IApplicationUserService
 {
