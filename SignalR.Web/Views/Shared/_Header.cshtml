@@ -1,0 +1,29 @@
+﻿@{
+    var isUserAuthenticate = User.Identity?.IsAuthenticated == true;
+}
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SignalR.Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 @(isUserAuthenticate ? "" : "d-none")"
+                      id="frmLogOut" action="@Url.Action("LogOut", "Account")" method="post">
+                    <label class="btn btn-primary m-2" id="lblFullName">
+                        @User.GetFullName()
+                    </label>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+</header>

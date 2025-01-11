@@ -1,0 +1,30 @@
+// Global using directives
+
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using Microsoft.AspNetCore.Authentication;
+global using Microsoft.AspNetCore.Authentication.Cookies;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc.Rendering;
+global using Microsoft.AspNetCore.SignalR;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.IdentityModel.Tokens;
+global using SignalR.Application.Helpers;
+global using SignalR.Application.Hubs;
+global using SignalR.Application.Implementations.Auth;
+global using SignalR.Application.Implementations.Chats;
+global using SignalR.Application.Implementations.Common;
+global using SignalR.Application.Interfaces.Auth;
+global using SignalR.Application.Interfaces.Chats;
+global using SignalR.Application.Interfaces.Common;
+global using SignalR.Application.Models;
+global using SignalR.Domain;
+global using SignalR.Domain.Entities;
+global using SignalRSwaggerGen.Attributes;

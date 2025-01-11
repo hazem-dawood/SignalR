@@ -1,0 +1,20 @@
+﻿@model IndexViewModel
+@{
+    var isUserAuthenticate = User.Identity?.IsAuthenticated == true;
+}
+<div class="col-lg-12 form-login @(isUserAuthenticate ? "d-none" : "")" id="divSignIn">
+    <div class="row justify-content-center">
+        <div class="form-group col-md-12">
+            <label>User Name</label>
+            <select class="form-control" name="UserName" asp-items="Model.Users" id="ddlUserName">
+            </select>
+        </div>
+        <div class="form-group col-md-12">
+            <label>Password</label>
+            <input class="form-control" name="Password" id="txtPassword" type="text" value="123456" />
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-primary" id="btnSignIn">Sign In</button>
+        </div>
+    </div>
+</div>

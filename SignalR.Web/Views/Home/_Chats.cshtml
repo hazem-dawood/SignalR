@@ -1,0 +1,73 @@
+﻿@model IndexViewModel
+@{
+    @inject ICurrentUserService CurrentUserService;
+
+}
+
+@foreach (var item in Model.Chats)
+{
+    if (item.IsGroup)
+    {
+        <li class="clearfix" onclick="chatsService.onClickGetChat(this,@item.Id,true)" data-is-group="true"
+            data-id="@item.Id" data-user-id="@item.UserId">
+            <img src="" alt="avatar">
+            <div class="about">
+                <div class="name user-name">@item.Name</div>
+                <div class="status"> <i class="fa fa-circle offline online"></i> left 7 mins ago </div>
+            </div>
+        </li>
+    }
+    else
+    {
+        <li class="clearfix" onclick="chatsService.onClickGetChat(this,@item.Id,false)" data-id="@item.Id" data-user-id="@item.UserId">
+            <img src="@item.UserImage" alt="avatar">
+            <div class="about">
+                <div class="name user-name">
+                    @item.Name
+                    @if (CurrentUserService.UserId == item.UserId)
+                    {
+                        @: (You)
+                    }
+                </div>
+                <div class="status">
+                    @if (CurrentUserService.UserId == item.UserId || item.IsUserOnline())
+                    {
+                        <i class="fa fa-circle online"></i>
+                        @: @item.LastMessage?.SubStringMessage()
+                    }
+                    else
+                    {
+                        <i class="fa fa-circle offline "></i>
+                        @: @item.LastSeen!.Value.ToString("MM/dd/yyyy HH:mm")
+                    }
+                </div>
+            </div>
+        </li>
+    }
+}
+@foreach (var item in Model.NewUsers)
+{ //new chat
+    <li class="clearfix" onclick="chatsService.onClickGetChat(this,0,false)" data-id="0" data-user-id="@item.Id">
+        <img src="@item.ImageUrl" alt="avatar">
+        <div class="about">
+            <div class="name user-name">
+                @item.Name
+                @if (CurrentUserService.UserId == item.Id)
+                {
+                    @: (You)
+                }
+            </div>
+            <div class="status">
+                @if (CurrentUserService.UserId == item.Id || item.IsUserOnline())
+                {
+                    <i class="fa fa-circle online"></i>
+                }
+                else
+                {
+                    <i class="fa fa-circle offline "></i>
+                    @: @item.LastSeen!.Value.ToString("MM/dd/yyyy HH:mm")
+                }
+            </div>
+        </div>
+    </li>
+}

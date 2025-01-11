@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal R</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/waitme@1.19.0/waitMe.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="p-0 m-1">
+    <partial name="_Header" />
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <partial name="_Footer" />
+
+    <script>
+        /**
+         * why here ?
+         * to let you Know the Importance of IChatHubClient
+         */
+        var signalrConfiguration = {
+            route : '@ChatHub.Path',
+            addedToGroup : '@nameof(IChatHubClient.AddedToGroup)',
+            messageAdded : '@nameof(IChatHubClient.MessageAdded)',
+            newOnlineUser : '@nameof(IChatHubClient.NewOnlineUser)',
+            offlineUser : '@nameof(IChatHubClient.OfflineUser)'
+        };
+    </script>
+    <!-- #region start Please Include Jquery and signal r-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.10/signalr.min.js"></script>
+    <!-- #endregion end Please Include Jquery and signal r-->
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waitme@1.19.0/waitMe.min.js"></script>
+    <script src="~/js/notification.js"></script>
+    <script src="~/js/signalrservice.js"></script>
+    <script src="~/js/loginservice.js"></script>
+    <script src="~/js/chatsservice.js"></script>
+    <script src="~/js/chatboxservice.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Persist Security Info=true;trusted_connection=true;Encrypt=True;TrustServerCertificate=True;Server=.;Database=SignalRTest;Initial Catalog=SignalRTest;MultipleActiveResultSets=true;"
+  }
+}
