@@ -1,7 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-	<ItemGroup>
-		<Folder Include="Angular\" />
-	</ItemGroup>
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<Nullable>enable</Nullable>
@@ -11,6 +8,154 @@
 		<Compile Remove="Angular\**" />
 		<Content Remove="Angular\**" />
 		<None Remove="Angular\**" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\package.json" />
+	  <Content Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\_metadata.json" />
+	  <Content Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\package.json" />
+	  <Content Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\_metadata.json" />
+	  <Content Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr_temp_d684985d\package.json" />
+	  <Content Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_temp_efdfc397\package.json" />
+	  <Content Include="Angular\chat_app\.vscode\extensions.json" />
+	  <Content Include="Angular\chat_app\.vscode\launch.json" />
+	  <Content Include="Angular\chat_app\.vscode\tasks.json" />
+	  <Content Include="Angular\chat_app\angular.json" />
+	  <Content Include="Angular\chat_app\package-lock.json" />
+	  <Content Include="Angular\chat_app\package.json" />
+	  <Content Include="Angular\chat_app\public\favicon.ico" />
+	  <Content Include="Angular\chat_app\src\app\app.component.css" />
+	  <Content Include="Angular\chat_app\src\app\app.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\auth\log-in\log-in.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\auth\log-in\log-in.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-box-send-message\chat-box-send-message.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-box-send-message\chat-box-send-message.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-box.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-box.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-user-message-template\chat-user-message-template.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-user-message-template\chat-user-message-template.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-group\chat-group.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-group\chat-group.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-users.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-users.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-user\chat-user.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-user\chat-user.component.html" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\home\home.component.css" />
+	  <Content Include="Angular\chat_app\src\app\core\features\chats\home\home.component.html" />
+	  <Content Include="Angular\chat_app\src\index.html" />
+	  <Content Include="Angular\chat_app\src\styles.css" />
+	  <Content Include="Angular\chat_app\tsconfig.app.json" />
+	  <Content Include="Angular\chat_app\tsconfig.json" />
+	  <Content Include="Angular\chat_app\tsconfig.spec.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\.tsbuildinfo" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_common.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_common.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_common_http.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_common_http.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_core.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_core.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_core_rxjs-interop.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_core_rxjs-interop.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_forms.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_forms.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_platform-browser.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_platform-browser.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_router.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40angular_router.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40microsoft_signalr.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\%40microsoft_signalr.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-4MWZPJK4.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-4MWZPJK4.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-GY43RMJF.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-GY43RMJF.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-I32B32AA.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-I32B32AA.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-J25FJFZE.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-J25FJFZE.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-VOS3W2PK.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-VOS3W2PK.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-ZSY7TSMJ.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\chunk-ZSY7TSMJ.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\rxjs.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps\rxjs.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_common.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_common.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_common_http.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_common_http.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_core.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_core.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_core_rxjs-interop.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_core_rxjs-interop.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_forms.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_forms.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_platform-browser.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_platform-browser.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_platform-server.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_platform-server.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_router.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_router.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_ssr.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_ssr.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_ssr_node.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40angular_ssr_node.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40microsoft_signalr.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\%40microsoft_signalr.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-24MNGGDE.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-24MNGGDE.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-42CGL2TN.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-42CGL2TN.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-BTRX53DY.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-BTRX53DY.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-FUFKUDCW.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-FUFKUDCW.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-IC2DTLFA.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-IC2DTLFA.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-ICOTJOGS.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-ICOTJOGS.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-OFHWVIML.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-OFHWVIML.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-T4XHMJL2.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-T4XHMJL2.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-YHCV7DAQ.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\chunk-YHCV7DAQ.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\express.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\express.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\rxjs.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\rxjs.js.map" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\xhr2-TXIMV6CV.js" />
+	  <None Include="Angular\chat_app\.angular\cache\19.0.7\chat_app\vite\deps_ssr\xhr2-TXIMV6CV.js.map" />
+	  <None Include="Angular\chat_app\.editorconfig" />
+	  <None Include="Angular\chat_app\.gitignore" />
+	  <None Include="Angular\chat_app\.hintrc" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\app.component.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\app.component.spec.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\app.config.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\app.config.server.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\app.routes.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\app.routes.server.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\guards\auth.guard.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\interceptors\set-token.interceptor.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\auth\logInDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\chats\addGroupDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\chats\userChatDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\common\getUserDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\common\idNameDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\common\iUserOnlineDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\common\lastMessageDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\common\requestPaginationDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\models\common\resultDto.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\services\auth\applicationUser.service.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\services\auth\authenticate.service.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\services\chats\group.service.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\services\chats\userChat.service.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\services\chats\userChatMessage.service.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\services\common\http-client.service.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\app\core\services\common\signalr.service.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\main.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\main.server.js" />
+	  <None Include="Angular\chat_app\dist\out-tsc\server.js" />
+	  <None Include="Angular\chat_app\README.md" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
@@ -27,5 +172,54 @@
 	<ItemGroup>
 		<ProjectReference Include="..\SignalR.Application\SignalR.Application.csproj" />
 		<ProjectReference Include="..\SignalR.Persistence\SignalR.Persistence.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\app.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\app.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\app.config.server.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\app.config.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\app.routes.server.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\app.routes.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\auth\log-in\log-in.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\auth\log-in\log-in.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-box-send-message\chat-box-send-message.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-box-send-message\chat-box-send-message.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-box.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-box.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-user-message-template\chat-user-message-template.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-box\chat-user-message-template\chat-user-message-template.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-group\chat-group.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-group\chat-group.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-users.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-users.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-user\chat-user.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\chat-users\chat-user\chat-user.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\home\home.component.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\chats\home\home.component.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\features\common\basComponent.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\guards\auth.guard.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\interceptors\set-token.interceptor.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\auth\logInDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\chats\addGroupDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\chats\userChatDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\common\getUserDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\common\idNameDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\common\iUserOnlineDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\common\lastMessageDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\common\requestPaginationDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\models\common\resultDto.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\pipes\format-date.pipe.spec.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\pipes\format-date.pipe.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\services\auth\applicationUser.service.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\services\auth\authenticate.service.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\services\chats\group.service.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\services\chats\userChat.service.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\services\chats\userChatMessage.service.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\services\common\http-client.service.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\app\core\services\common\signalr.service.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\main.server.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\main.ts" />
+	  <TypeScriptCompile Include="Angular\chat_app\src\server.ts" />
 	</ItemGroup>
 </Project>
